@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8CD0E1"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/fondo_reloj"
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:background="#C3C2C2"
+        app:layout_constraintBottom_toBottomOf="@+id/se"
+        app:layout_constraintEnd_toEndOf="@+id/segundo"
+        app:layout_constraintStart_toStartOf="@+id/hora"
+        app:layout_constraintTop_toTopOf="@+id/hora" />
+
+    <TextView
+        android:id="@+id/hora"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="222dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="463dp"
+        android:background="@color/white"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/minuto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/minuto"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="222dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="463dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/segundo"
+        app:layout_constraintStart_toEndOf="@+id/hora"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/segundo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="222dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginBottom="463dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/minuto"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="81dp"
+        android:layout_marginEnd="97dp"
+        android:gravity="center"
+        android:radius="7dp"
+        android:text="RELOJ"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ho"
+        android:layout_width="76dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:hint="HORAS"
+        app:layout_constraintEnd_toEndOf="@id/hora"
+        app:layout_constraintStart_toStartOf="@id/hora"
+        app:layout_constraintTop_toBottomOf="@id/hora" />
+
+    <TextView
+        android:id="@+id/mi"
+        android:layout_width="76dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:hint="MINUTOS"
+        app:layout_constraintEnd_toEndOf="@id/minuto"
+        app:layout_constraintStart_toStartOf="@id/minuto"
+        app:layout_constraintTop_toBottomOf="@id/minuto" />
+
+    <TextView
+        android:id="@+id/se"
+        android:layout_width="76dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:hint="SEGUNDOS"
+        app:layout_constraintEnd_toEndOf="@id/segundo"
+        app:layout_constraintStart_toStartOf="@id/segundo"
+        app:layout_constraintTop_toBottomOf="@id/segundo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="7dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="17dp"
+        android:text=":"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/ho"
+        app:layout_constraintEnd_toStartOf="@+id/minuto"
+        app:layout_constraintStart_toEndOf="@+id/hora"
+        app:layout_constraintTop_toBottomOf="@+id/titulo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="7dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="17dp"
+        android:text=":"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/mi"
+        app:layout_constraintEnd_toStartOf="@+id/segundo"
+        app:layout_constraintStart_toEndOf="@+id/minuto"
+        app:layout_constraintTop_toBottomOf="@+id/titulo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
