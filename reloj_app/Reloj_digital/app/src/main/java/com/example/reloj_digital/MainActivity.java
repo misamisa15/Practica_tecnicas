@@ -20,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
         relojInicio();
     }
 
+    /*HOLA ESTO ES UN COMENTARIO*/
+    /*VERSION 1 PRACTICA DE TECNICAS*/
     private void relojInicio() {
         Thread thread = new Thread(new Runnable() {
             @Override
